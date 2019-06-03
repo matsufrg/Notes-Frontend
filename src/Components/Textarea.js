@@ -10,6 +10,7 @@ export const Textarea = styled.textarea`
     outline: 0px !important;
     border-radius: 15px;
     resize: none;
+    margin-top: 2px;
 
     -webkit-box-shadow: 5px 1px 8px 3px rgba(240,240,240,1);
 -moz-box-shadow: 5px 1px 8px 3px rgba(240,240,240,1);
