@@ -84,6 +84,9 @@ span {
   input {
     width: 90%;
   }
+  ul {
+    width: 20%;
+  }
   button {
     padding: 0.35em 1.0em;
   }

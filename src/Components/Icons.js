@@ -19,7 +19,22 @@ export const IconWrapper = styled.span`
     : ''
     } 
 
-    @media (width: 320px) {
+    @media (max-width: 768px) {
+        ${props => props.trash ? `
+        top: 3px;
+        left: 25px;` : ''}
+    }
+
+    @media (width: 768px) {
+    ${props => props.info ? `
+        top: 3px;
+        left: 24px;
+    ` 
+    : '' }
+    padding-right: 10px;
+    }
+
+    @media (max-width: 320px) {
     ${props => props.trash ? `
         top: 3px;
         float: right;
