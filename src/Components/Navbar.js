@@ -94,7 +94,7 @@ span {
 
 @media (max-width: 600px){
   input {
-    width: 80%;
+    width: 78%;
   }
 }
 
@@ -104,6 +104,9 @@ span {
   }
   ul {
     width: 40%;
+  }
+  div {
+    height: 30px;
   }
 }
 

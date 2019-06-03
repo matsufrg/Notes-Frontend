@@ -9,6 +9,8 @@ export const IconWrapper = styled.span`
     position: relative;
     top: 3px;
     left: 5px;
+    padding-left: 15px;
+
 }
 
     ${props => props.info ? 
@@ -18,39 +20,29 @@ export const IconWrapper = styled.span`
     text-align: left;` 
     : ''
     } 
-
-    @media (max-width: 768px) {
-        ${props => props.trash ? `
-        top: 3px;
-        left: 25px;` : ''}
-    }
-
-    @media (width: 768px) {
-    ${props => props.info ? `
-        top: 3px;
-        left: 24px;
-    ` 
-    : '' }
-    padding-right: 10px;
+    
+    @media (max-width: 500px){
+        left: 0;
     }
 
     @media (max-width: 320px) {
     ${props => props.trash ? `
-        top: 3px;
-        float: right;
+        left: 5px;
+        top: 3px !important;
+        float: right !important;
+        padding-right: 10px;
     ` 
     : '' }
-    padding-right: 10px;
     }
 
     @media (width: 320px) {
     ${props => props.info ? `
-        top: 3px;
-        right: 11px;
-        float: right;
+        left: 10px;
+        top: 3px !important;
+        right: 5px !important;
+        float: right !important;
     ` 
     : '' }
-    padding-right: 10px;
     }
 `;
 
