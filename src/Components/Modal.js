@@ -5,11 +5,13 @@ import { distanceInWords } from 'date-fns';
 
 
 export const Modal = styled.div`
-        opacity: 0;
+
+    opacity: 0;
     display: none;
     position: absolute;
     top: 4px;
     left: 250px;
+    overflow: auto;
     width: 250px;
     background-color: rgb(240,240,240);
     border-radius: 17px;
