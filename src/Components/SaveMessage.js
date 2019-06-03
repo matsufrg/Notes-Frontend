@@ -16,6 +16,10 @@ export const SaveMessage = styled.p`
             padding-right: 10px;
         }
 
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+
     ${props => props.visible ? `opacity: .7; display:block;` : ''};
 `;
 

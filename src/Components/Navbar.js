@@ -100,10 +100,10 @@ span {
 
 @media (max-width: 500px) {
   li {
-    width: 40% !important;
+    width: 39% !important;
   }
   ul {
-    width: 40%;
+    width: 39%;
   }
   div {
     height: 30px;

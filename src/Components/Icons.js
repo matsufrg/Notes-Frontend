@@ -11,8 +11,6 @@ export const IconWrapper = styled.span`
     left: 5px;
     padding-left: 15px;
 
-}
-
     ${props => props.info ? 
     `
     color: #1ac6ff !important;
@@ -22,7 +20,14 @@ export const IconWrapper = styled.span`
     } 
     
     @media (max-width: 500px){
+        ${props => props.trash ? `
         left: 0;
+        padding-left: 0;` : ''};
+
+        ${props => props.info ? `
+        padding-left: 0;
+            ` 
+            : '' }
     }
 
     @media (max-width: 320px) {
@@ -31,11 +36,10 @@ export const IconWrapper = styled.span`
         top: 3px !important;
         float: right !important;
         padding-right: 10px;
+        padding-left: 15px;
     ` 
     : '' }
-    }
 
-    @media (width: 320px) {
     ${props => props.info ? `
         left: 10px;
         top: 3px !important;
